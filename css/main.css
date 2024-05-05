@@ -18,9 +18,13 @@ body {
   perspective: 1px;
   transform-style: preserve-3d;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-header {
+.button:hover {
+  text-decoration: underline;
+}
+.parallax {
   box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
@@ -28,33 +32,33 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-header span {
+.parallax span {
   padding-right: 10vw;
   padding-top: 10vh;
   filter: drop-shadow(5px 5px 5px #222);
   vertical-align: top;
 }
-header span a {
+.parallax span a {
   text-decoration: none;
   color: inherit;
 }
-header span a img {
+.parallax span a img {
   width: 6vw;
   display: block;
   text-align: start;
-  padding-top: 4vh;
-  padding-left: 4vw;
+  padding-top: 45px;
+  padding-left: 70px;
 }
-header h1 {
+.parallax h1 {
   margin-left: auto;
   margin-right: auto;
-  top: 50vh;
+  top: 500px;
   left: 0;
   right: 0;
   position: absolute;
   filter: drop-shadow(5px 5px 5px #222);
 }
-header::before {
+.parallax::before {
   top: 0;
   left: 0;
   right: 0;
@@ -63,7 +67,51 @@ header::before {
   margin-top: 35px;
   content: "";
   position: absolute;
-  background: url(../images/main.webp);
+  background: url(../images/main1.webp);
   background-size: cover;
   transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+#parallaxAlt {
+  margin-top: 1090px;
+}
+#parallaxAlt::before {
+  background: url(../images/main2.webp);
+}
+
+.container {
+  margin-top: 100px;
+  padding: 40px;
+  position: absolute;
+  background: #f9efdb;
+  height: 900px;
+  width: 100vw;
+  line-height: 30px;
+  font-weight: lighter;
+  color: grey;
+  z-index: 2;
+}
+.container img {
+  width: 300px;
+  height: auto;
+}
+.container span {
+  display: flex;
+  justify-content: center;
+}
+.container span a {
+  text-decoration: none;
+  color: inherit;
+  filter: drop-shadow(5px 5px 5px rgb(149, 168, 154));
+}
+.container span a:hover {
+  text-decoration: underline;
+}
+#instagram,
+#map {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin: 2vh 0 5vh 0;
+  filter: drop-shadow(5px 5px 5px #222);
 }
