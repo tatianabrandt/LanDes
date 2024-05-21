@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  color: #fff;
+  color: #f2f2f2;
   font-family: Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ body {
 
 .container {
   margin-top: 100px;
-  padding: 40px;
+  padding: auto;
   position: absolute;
   background: #f9efdb;
   height: 900px;
@@ -94,6 +94,7 @@ body {
 .container img {
   width: 300px;
   height: auto;
+  border-radius: 10px;
 }
 .container span {
   display: flex;
@@ -107,11 +108,64 @@ body {
 .container span a:hover {
   text-decoration: underline;
 }
+
+.slidesContainer {
+  width: 800px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+.slides {
+  text-align: center;
+}
+.slides img {
+  width: 50%;
+  align-items: center;
+  border-radius: 50%;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.slidesPrev,
+.slidesNext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+/* перемещение кнопки ">" вправо */
+.slidesNext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slidesPrev:hover,
+.slidesNext:hover {
+  background-color: rgba(205, 196, 180, 0.8);
+}
+
+.slidesText {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center;
+  filter: drop-shadow(5px 5px 5px #333);
+}
+
 #instagram,
 #map {
   display: flex;
   justify-content: center;
   gap: 3vw;
   margin: 2vh 0 5vh 0;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #333);
 }
