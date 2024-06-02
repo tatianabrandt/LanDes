@@ -43,9 +43,9 @@ body {
   color: inherit;
 }
 .parallax span a img {
-  width: 6vw;
-  display: block;
-  text-align: start;
+  width: 120px;
+  display: flex;
+  justify-content: start;
   padding-top: 45px;
   padding-left: 70px;
 }
@@ -142,7 +142,7 @@ body {
   font-weight: bold;
   font-size: 25px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 10px;
   user-select: none;
   filter: drop-shadow(0px 0px 5px #222);
 }

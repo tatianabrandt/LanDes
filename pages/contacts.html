@@ -5,8 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LanDes Contacts</title>
-    <link rel="stylesheet" href="css/contacts.css" />
-    <script src="js/contacts.js" defer></script>
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <script src="../js/contacts.js"></script>
   </head>
-  <body></body>
+  <body>
+    <span id="logo">
+      <a href="../index.html"><img src="../logos/logo-no-background.png" /></a>
+    </span>
+
+    <h1>Форма обратной связи</h1>
+    <form id="feedbackForm" onsubmit="alert('Данные отправлены');">
+      <div class="form">
+        <p>
+          <input
+            placeholder="Имя..."
+            oninput="this.className = ''"
+            name="name"
+          />
+        </p>
+        <p>
+          <input
+            placeholder="Почта..."
+            oninput="this.className = ''"
+            name="email"
+          />
+        </p>
+        <p>
+          <input
+            placeholder="Номер..."
+            oninput="this.className = ''"
+            name="phone"
+          />
+        </p>
+        <p>
+          <input
+            placeholder="Сообщение..."
+            oninput="this.className = ''"
+            name="message"
+            id="formMessage"
+          />
+        </p>
+      </div>
+
+      <div id="submit">
+        <a class="submitButton" onclick="validateForm()"> Отправить </a>
+      </div>
+    </form>
+
+    <div class="footer">
+      <div id="logoAlt">
+        <a href="../index.html"
+          ><img src="../logos/logo-no-background_alt.png"
+        /></a>
+      </div>
+      <span><p>Copyright © 2024 LanDes | Powered by LanDes</p></span>
+      <div id="links">
+        <div>
+          <a class="button" href="../index.html">Главная</a>
+        </div>
+        <div>
+          <a class="button" href="portfolio.html">Портфолио</a>
+        </div>
+        <div>
+          <a class="button" href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
