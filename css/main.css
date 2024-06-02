@@ -118,35 +118,34 @@ body {
   width: 800px;
   position: relative;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 110px;
 }
 .slides {
   text-align: center;
 }
 .slides img {
-  width: 50%;
+  width: 40%;
   align-items: center;
   border-radius: 4%;
   filter: drop-shadow(5px 5px 5px #222);
 }
-
 .slidesPrev,
 .slidesNext {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 19px;
+  margin-left: 150px;
+  margin-right: 150px;
   color: green;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(0px 0px 5px #222);
 }
-/* перемещение кнопки ">" вправо */
 .slidesNext {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -155,10 +154,9 @@ body {
 .slidesNext:hover {
   background-color: rgba(205, 196, 180, 0.8);
 }
-
 .slidesText {
   font-size: 15px;
-  padding: 8px 12px;
+  top: 600px;
   position: absolute;
   bottom: -40px;
   width: 100%;
@@ -166,6 +164,10 @@ body {
   filter: drop-shadow(5px 5px 5px #333);
 }
 
+#containerAboveFooter {
+  height: 1250px;
+  padding-top: 45px;
+}
 #instagram,
 #map {
   display: flex;
@@ -173,11 +175,6 @@ body {
   gap: 3vw;
   margin: 2vh 0 5vh 0;
   filter: drop-shadow(5px 5px 5px #333);
-}
-
-#containerAboveFooter {
-  height: 1250px;
-  padding-top: 45px;
 }
 
 .footer {
@@ -194,6 +191,14 @@ body {
   display: flex;
   justify-content: center;
 }
+.footer img {
+  width: 200px;
+}
+.footer p {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
 .footer #links {
   display: flex;
   justify-content: center;
@@ -204,12 +209,4 @@ body {
   color: inherit;
   font-size: 16px;
   vertical-align: top;
-}
-.footer img {
-  width: 200px;
-}
-.footer p {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
 }
