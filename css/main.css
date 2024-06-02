@@ -35,7 +35,7 @@ body {
 .parallax span {
   padding-right: 10vw;
   padding-top: 10vh;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 8px 8px #222);
   vertical-align: top;
 }
 .parallax span a {
@@ -52,11 +52,16 @@ body {
 .parallax h1 {
   margin-left: auto;
   margin-right: auto;
-  top: 500px;
+  top: 420px;
   left: 0;
   right: 0;
   position: absolute;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 8px 8px #222);
+  font-size: 80px;
+}
+.parallax #landscape {
+  top: 550px;
+  font-size: 15px;
 }
 .parallax::before {
   top: 0;
@@ -121,7 +126,7 @@ body {
 .slides img {
   width: 50%;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 4%;
   filter: drop-shadow(5px 5px 5px #222);
 }
 
@@ -168,4 +173,43 @@ body {
   gap: 3vw;
   margin: 2vh 0 5vh 0;
   filter: drop-shadow(5px 5px 5px #333);
+}
+
+#containerAboveFooter {
+  height: 1250px;
+  padding-top: 45px;
+}
+
+.footer {
+  margin-top: 1350px;
+  position: absolute;
+  height: 300px;
+  width: 100vw;
+  line-height: 30px;
+  font-weight: lighter;
+  color: grey;
+  z-index: 2;
+}
+.footer #logo {
+  display: flex;
+  justify-content: center;
+}
+.footer #links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  vertical-align: top;
+}
+.footer img {
+  width: 200px;
+}
+.footer p {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
