@@ -7,7 +7,6 @@ html {
   width: 100vw;
   overflow: hidden;
 }
-
 body {
   color: #f2f2f2;
   font-family: Verdana, sans-serif;
@@ -20,10 +19,10 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 .button:hover {
   text-decoration: underline;
 }
+
 .parallax {
   box-sizing: border-box;
   min-height: 100vh;
@@ -72,7 +71,7 @@ body {
   margin-top: 35px;
   content: "";
   position: absolute;
-  background: url(../images/main1.webp);
+  background: url(../images/imain1.webp);
   background-size: cover;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
@@ -81,7 +80,7 @@ body {
   margin-top: 1090px;
 }
 #parallaxAlt::before {
-  background: url(../images/main2.webp);
+  background: url(../images/imain2.webp);
 }
 
 .container {
