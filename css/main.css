@@ -34,7 +34,7 @@ body {
 .parallax span {
   padding-right: 10vw;
   padding-top: 10vh;
-  filter: drop-shadow(5px 8px 8px #222);
+  filter: drop-shadow(5px 3px 3px #222);
   vertical-align: top;
 }
 .parallax span a {
@@ -74,6 +74,7 @@ body {
   background: url(../images/imain1.webp);
   background-size: cover;
   transform: translateZ(-1px) scale(2);
+  background-repeat: no-repeat;
   z-index: -1;
 }
 #parallaxAlt {
@@ -81,6 +82,7 @@ body {
 }
 #parallaxAlt::before {
   background: url(../images/imain2.webp);
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -118,6 +120,7 @@ body {
   position: relative;
   margin: auto;
   margin-top: 110px;
+  background: rgba(0, 0, 0, 0);
 }
 .slides {
   text-align: center;
@@ -160,7 +163,6 @@ body {
   bottom: -40px;
   width: 100%;
   text-align: center;
-  filter: drop-shadow(5px 5px 5px #333);
 }
 
 #containerAboveFooter {
@@ -173,7 +175,6 @@ body {
   justify-content: center;
   gap: 3vw;
   margin: 2vh 0 5vh 0;
-  filter: drop-shadow(5px 5px 5px #333);
 }
 
 .footer {

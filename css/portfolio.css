@@ -74,6 +74,7 @@ body {
   background: url(../images/pmain.png);
   background-size: cover;
   transform: translateZ(-1px) scale(2);
+  background-repeat: no-repeat;
   z-index: -1;
 }
 
