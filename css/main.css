@@ -169,12 +169,16 @@ body {
   height: 1250px;
   padding-top: 45px;
 }
+#containerAboveFooter span a {
+  filter: drop-shadow(0px 0px 0px #222);
+}
 #instagram,
 #map {
   display: flex;
   justify-content: center;
   gap: 3vw;
   margin: 2vh 0 5vh 0;
+  filter: drop-shadow(5px 8px 8px #222);
 }
 
 .footer {
