@@ -71,7 +71,7 @@ body {
   margin-top: 35px;
   content: "";
   position: absolute;
-  background: url(../images/pmain.png);
+  background: url(../images/pmain.webp);
   background-size: cover;
   transform: translateZ(-1px) scale(2);
   background-repeat: no-repeat;

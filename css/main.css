@@ -73,9 +73,8 @@ body {
   position: absolute;
   background: url(../images/imain1.webp);
   background-size: cover;
-  transform: translateZ(-1px) scale(2);
   background-repeat: no-repeat;
-  z-index: -1;
+  transform: translateZ(-1px) scale(2);
 }
 #parallaxAlt {
   margin-top: 1090px;
